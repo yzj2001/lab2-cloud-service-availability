@@ -32,6 +32,9 @@ spec:
         image: victoriametrics/operator:v0.34.1
         name: manager
         resources:
+          limits:
+            cpu: 120m
+            memory: 520Mi
           requests:
             cpu: 80m
             memory: 120Mi
